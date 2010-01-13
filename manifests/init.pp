@@ -1,5 +1,5 @@
 class testmodule {
 	file { "/tmp/puppet-testmodule":
-		content => "Puppet module test file",
+		source => "puppet://$server/modules/testmodule/puppet-testmodule",
 	}
 }
